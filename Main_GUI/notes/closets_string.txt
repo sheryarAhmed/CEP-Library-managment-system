@@ -1,0 +1,8 @@
+Select TableNameColumn, Len(TableNameColumn) - Len('SearchWord') from TableName
+Where TableNameColumn like '%SearchWord%'
+Order By Len(TableNameColumn) - Len('SearchWord');
+
+
+Select books, Len(Book_title) - Len('java') from books
+Where books like '%java%'
+Order By Len(books) - Len('java');
